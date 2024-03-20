@@ -10,12 +10,10 @@ public class Input {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 6; i++) {
             list.add(sc.nextInt());
-
         }
         System.out.println( list.size());
 
         System.out.println(list);
-
 
     }
 }

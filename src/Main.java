@@ -1,23 +1,22 @@
-import number.OperationOnNumber;
-import practice.Calculator;
-import practice.Coder;
+import number.Student;
+import practice.GetNegativeNumber;
+import practice.ReverseOfArray;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+class Main{
     public static void main(String[] args) {
-
-        change(1,2,4,5,5,6,7,8,9,9,0,0,0,1,2,13,33,31,31,1331,31,313,13,13,13,1,3,3);
-        multiple("Sumit Yadav","ram");
-
+        Scanner scanner=new Scanner(System.in);
+        Search sc=new Search();
+        int length= scanner.nextInt();
+        int key= scanner.nextInt();
+        int [] student =new int[length];
+        for (int index = 0; index < student.length; index++) {
+            student[index]=scanner.nextInt();
+        }
+        System.out.println("Student : " + Arrays.toString(student));
+        System.out.println(sc.containsElement(student,key));
     }
-    static void change(int ...v){
-        System.out.println(Arrays.toString(v));
-    }
-    static void multiple( String ...v){
-        System.out.println(Arrays.toString(v));
-    }
-
-
 }
+

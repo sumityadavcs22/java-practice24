@@ -11,11 +11,11 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class SinglyLinkedListNode {
-    public int data;
+    public int val;
     public SinglyLinkedListNode next;
 
     public SinglyLinkedListNode(int nodeData) {
-        this.data = nodeData;
+        this.val = nodeData;
         this.next = null;
     }
 }
@@ -45,7 +45,7 @@ class SinglyLinkedList {
 class SinglyLinkedListPrintHelper {
     public static void printList(SinglyLinkedListNode node, String sep, BufferedWriter bufferedWriter) throws IOException {
         while (node != null) {
-            bufferedWriter.write(String.valueOf(node.data));
+            bufferedWriter.write(String.valueOf(node.val));
 
             node = node.next;
 
